@@ -20,4 +20,4 @@ npm test         # pruebas de las estructuras
 
 Requiere Node.js 20.19+ (recomendado 22 LTS).
 
-Ver `ESTUDIANTE.txt` para el detalle de la entrega.
+Ver `ESTUDIANTE.txt` para el detalle de la entrega..
