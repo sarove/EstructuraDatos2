@@ -1,0 +1,77 @@
+==============================================================
+ UNIVERSIDAD AUTÓNOMA DE OCCIDENTE - Santiago de Cali
+ Facultad de Ingeniería - Ingeniería Informática
+==============================================================
+
+ Asignatura : Estructuras de Datos y Algoritmos II
+ Tema       : Colas (Queues) - Clase 06: Pilas y Colas
+ Entrega    : CHALLENGE 05 - Cola de personas en un cajero (ATM) en React
+ Estudiante : Salvador Rodriguez Velasco
+ Semestre   : Sexto (6)
+ Profesor   : Jonathan López Londoño
+ Fecha      : Septiembre de 2026
+
+--------------------------------------------------------------
+ ENUNCIADO
+--------------------------------------------------------------
+ 1. Crear y manejar una nueva cola de personas en un cajero
+    automático. Cada persona debe tener nombre, monto a retirar
+    y una fecha de llegada aleatoria asignada por el sistema.
+ 2. Llenar la cola con datos simulados (mock).
+ 3. Crear un proyecto nuevo en React e implementar una pantalla
+    con un formulario para crear una persona y agregarla a la cola.
+ 4. Imprimir la cola en pantalla según la fecha de llegada.
+
+--------------------------------------------------------------
+ CONCEPTO: COLA (FIFO - First In, First Out)
+--------------------------------------------------------------
+ La primera persona en llegar es la primera en ser atendida.
+ Métodos implementados (clase Queue):
+   enqueue(item)  agrega al final                       O(1)
+   dequeue()      saca y retorna el frente (o null)     O(n) por shift()
+   peek()         retorna el frente sin sacarlo         O(1)
+   size()         cantidad de elementos                 O(1)
+   isEmpty()      true si la cola está vacía            O(1)
+   print()        imprime del frente al final           O(n)
+
+ AtmQueue extiende Queue: como la fecha de llegada es aleatoria,
+ enqueue ubica a cada persona en su posición cronológica (O(n)).
+ Así el frente siempre es quien llegó primero y la cola queda
+ impresa según la fecha de llegada.
+
+--------------------------------------------------------------
+ CONTENIDO DEL REPOSITORIO
+--------------------------------------------------------------
+ src/structures/Queue.js           Clase Queue (cola de la clase)
+ src/structures/AtmQueue.js        Cola del cajero ordenada por llegada
+ src/data/people.js                Personas mock, fecha aleatoria,
+                                   validación y formatos (COP, fecha)
+ src/context/AtmQueueContext.jsx   Cola compartida entre pantallas
+ src/pages/QueuePage.jsx           Pantalla 1: cola impresa por llegada
+ src/pages/NewPersonPage.jsx       Pantalla 2: formulario nueva persona
+ src/components/                   Navbar, Footer y Consola
+ tests/cola.test.js                Pruebas (node:test)
+ docs/                             Documento Word con la explicación
+
+--------------------------------------------------------------
+ CÓMO EJECUTAR
+--------------------------------------------------------------
+ Requisito: Node.js 20.19 o superior (recomendado 22 LTS) y npm.
+
+   1) Abrir una terminal en la carpeta del proyecto
+   2) npm install          (instala dependencias)
+   3) npm run dev          (inicia el servidor de desarrollo)
+   4) Abrir http://localhost:5173 en el navegador
+
+ Otros comandos:
+   npm test                (ejecuta las pruebas de la cola)
+   npm run build           (genera la versión de producción en dist/)
+   npm run preview         (sirve la versión de producción)
+
+--------------------------------------------------------------
+ RUTAS DE LA APLICACIÓN
+--------------------------------------------------------------
+ /                 Cola del cajero (impresión, dequeue, peek, print)
+ /nueva-persona    Formulario para crear una persona (enqueue)
+
+==============================================================

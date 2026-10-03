@@ -1,0 +1,62 @@
+==============================================================
+ UNIVERSIDAD AUTÓNOMA DE OCCIDENTE - Santiago de Cali
+ Facultad de Ingeniería - Ingeniería Informática
+==============================================================
+
+ Asignatura : Estructuras de Datos y Algoritmos II
+ Tema       : Listas (Clase 03)
+ Entrega    : CHALLENGE 03 - Listas enlazadas y doblemente enlazadas en React
+ Estudiante : Salvador Rodriguez Velasco
+ Semestre   : Sexto (6)
+ Fecha      : Septiembre de 2026
+
+--------------------------------------------------------------
+ ENUNCIADO
+--------------------------------------------------------------
+ 1. Implementar una lista enlazada para reproducir canciones en
+    orden. Llenar la lista con datos simulados (mock).
+ 2. Implementar una lista doblemente enlazada para navegar hacia
+    atrás y hacia adelante entre páginas visitadas en el
+    navegador. Llenar la lista con datos falsos (fake).
+ 3. Crear un proyecto en React con 2 páginas nuevas: lista
+    enlazada y lista doblemente enlazada.
+ 4. Usar las listas implementadas en cada página. Recorrer las
+    listas usando botones dentro de las páginas.
+
+--------------------------------------------------------------
+ CONTENIDO DEL REPOSITORIO
+--------------------------------------------------------------
+ src/structures/LinkedList.js        Lista enlazada simple (Node, LinkedList)
+ src/structures/DoublyLinkedList.js  Lista doblemente enlazada (DoublyNode, DoublyLinkedList)
+ src/data/songs.js                   Canciones simuladas (mock)
+ src/data/webPages.js                Páginas web falsas (fake)
+ src/pages/Home.jsx                  Página de inicio
+ src/pages/PlaylistPage.jsx          Página 1: reproductor (lista enlazada)
+ src/pages/BrowserHistoryPage.jsx    Página 2: historial del navegador (lista doble)
+ src/components/Navbar.jsx           Menú de navegación
+ src/components/Footer.jsx           Pie de página con datos del estudiante
+ tests/listas.test.js                Pruebas de las estructuras (node:test)
+
+--------------------------------------------------------------
+ CÓMO EJECUTAR
+--------------------------------------------------------------
+ Requisito: Node.js 20.19 o superior (recomendado 22 LTS) y npm.
+
+   1) Abrir una terminal en la carpeta del proyecto
+   2) npm install          (instala dependencias)
+   3) npm run dev          (inicia el servidor de desarrollo)
+   4) Abrir http://localhost:5173 en el navegador
+
+ Otros comandos:
+   npm test                (ejecuta las pruebas de las listas)
+   npm run build           (genera la versión de producción en dist/)
+   npm run preview         (sirve la versión de producción)
+
+--------------------------------------------------------------
+ RUTAS DE LA APLICACIÓN
+--------------------------------------------------------------
+ /                             Inicio
+ /lista-enlazada               Reproductor de canciones (lista enlazada)
+ /lista-doblemente-enlazada    Historial del navegador (lista doble)
+
+==============================================================

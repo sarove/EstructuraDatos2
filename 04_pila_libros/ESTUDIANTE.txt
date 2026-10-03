@@ -1,0 +1,70 @@
+==============================================================
+ UNIVERSIDAD AUTÓNOMA DE OCCIDENTE - Santiago de Cali
+ Facultad de Ingeniería - Ingeniería Informática
+==============================================================
+
+ Asignatura : Estructuras de Datos y Algoritmos II
+ Tema       : Pilas (Stacks) - Clase 06: Pilas y Colas
+ Entrega    : CHALLENGE 04 - Pila de libros en React
+ Estudiante : Salvador Rodriguez Velasco
+ Semestre   : Sexto (6)
+ Profesor   : Jonathan López Londoño
+ Fecha      : Septiembre de 2026
+
+--------------------------------------------------------------
+ ENUNCIADO
+--------------------------------------------------------------
+ 1. Crear y manejar una nueva pila de libros. Cada libro debe
+    tener Nombre, ISBN, Autor y Editorial.
+ 2. Llenar la pila con datos simulados (mock).
+ 3. Crear un proyecto nuevo en React e implementar una pantalla
+    con un formulario para crear un libro y agregarlo a la pila.
+ 4. Imprimir la pila de libros en pantalla.
+
+--------------------------------------------------------------
+ CONCEPTO: PILA (LIFO - Last In, First Out)
+--------------------------------------------------------------
+ El último libro que se agrega (push) queda en la CIMA y es el
+ primero que sale (pop). Métodos implementados (clase Stack):
+   push(value)  agrega en la cima                     O(1)
+   pop()        saca y retorna la cima (o null)       O(1)
+   peek()       retorna la cima sin sacarla (o null)  O(1)
+   isEmpty()    true si la pila está vacía            O(1)
+   size()       cantidad de elementos                 O(1)
+   print()      imprime de la cima a la base          O(n)
+
+--------------------------------------------------------------
+ CONTENIDO DEL REPOSITORIO
+--------------------------------------------------------------
+ src/structures/Stack.js            Clase Stack (pila)
+ src/data/books.js                  Libros de ejemplo (mock)
+ src/data/bookValidation.js         Validación del formulario (ISBN-10/13)
+ src/context/BookStackContext.jsx   Pila compartida entre pantallas
+ src/pages/StackPage.jsx            Pantalla 1: pila impresa en pantalla
+ src/pages/NewBookPage.jsx          Pantalla 2: formulario nuevo libro
+ src/components/                    Navbar, Footer y Consola
+ tests/pila.test.js                 Pruebas (node:test)
+ docs/                              Documento Word con la explicación
+
+--------------------------------------------------------------
+ CÓMO EJECUTAR
+--------------------------------------------------------------
+ Requisito: Node.js 20.19 o superior (recomendado 22 LTS) y npm.
+
+   1) Abrir una terminal en la carpeta del proyecto
+   2) npm install          (instala dependencias)
+   3) npm run dev          (inicia el servidor de desarrollo)
+   4) Abrir http://localhost:5173 en el navegador
+
+ Otros comandos:
+   npm test                (ejecuta las pruebas de la pila)
+   npm run build           (genera la versión de producción en dist/)
+   npm run preview         (sirve la versión de producción)
+
+--------------------------------------------------------------
+ RUTAS DE LA APLICACIÓN
+--------------------------------------------------------------
+ /               Pila de libros (impresión, pop, peek, print)
+ /nuevo-libro    Formulario para crear un libro (push)
+
+==============================================================
