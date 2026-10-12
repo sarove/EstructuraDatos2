@@ -1,0 +1,24 @@
+{
+  "name": "challenge10-grafo-amigos-ciudades-react",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Challenge 10 - Grafo de amigos y ciudades con react-d3-graph. Estructuras de Datos y Algoritmos II - UAO. Estudiante: Salvador Rodriguez Velasco",
+  "author": "Salvador Rodriguez Velasco",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/grafo.test.js"
+  },
+  "dependencies": {
+    "d3": "^5.16.0",
+    "react": "^19.3.0",
+    "react-d3-graph": "^2.6.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
+  }
+}

@@ -8,7 +8,6 @@ import Console from '../components/Console.jsx';
  * PANTALLA: COLA DEL CAJERO AUTOMÁTICO
  * Imprime la cola según la fecha de llegada (del frente al final) y
  * permite atender (dequeue), consultar (peek) e imprimir (print).
- * Estudiante: Salvador Rodriguez Velasco
  */
 export default function QueuePage() {
   const {

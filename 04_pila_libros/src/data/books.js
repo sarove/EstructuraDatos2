@@ -2,7 +2,6 @@
  * Datos simulados (mock) para llenar la pila de libros.
  * Cada libro tiene: Nombre, ISBN, Autor y Editorial.
  * Se apilan en este orden, así que el ÚLTIMO del arreglo queda en la CIMA.
- * Estudiante: Salvador Rodriguez Velasco
  */
 export const mockBooks = [
   {

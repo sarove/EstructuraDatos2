@@ -1,9 +1,8 @@
-import { Nodo, ArbolNario } from '../structures/ArbolNario.js';
+import { ArbolNario, Nodo } from '../structures/ArbolNario.js';
 
 /**
  * ÁRBOL N-ARIO DE MENÚS (datos simulados)
  * ------------------------------------------------------------
- * Estudiante: Salvador Rodriguez Velasco
  *
  * Cada ítem del menú es un Nodo cuyo valor tiene:
  *   - title:     texto que se muestra en el menú

@@ -1,12 +1,11 @@
 /**
  * Pruebas de las estructuras de datos (sin dependencias externas).
  * Ejecutar con:  npm test
- * Estudiante: Salvador Rodriguez Velasco
  */
-import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { LinkedList } from '../src/structures/LinkedList.js';
+import { test } from 'node:test';
 import { DoublyLinkedList } from '../src/structures/DoublyLinkedList.js';
+import { LinkedList } from '../src/structures/LinkedList.js';
 
 const silence = () => {
   const original = console.log;

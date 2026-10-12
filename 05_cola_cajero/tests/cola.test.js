@@ -1,18 +1,17 @@
 /**
  * Pruebas de la cola, la cola del cajero y la validación.
  * Ejecutar con:  npm test
- * Estudiante: Salvador Rodriguez Velasco
- */
-import { test } from 'node:test';
+*/
 import assert from 'node:assert/strict';
-import { Queue } from '../src/structures/Queue.js';
-import { AtmQueue } from '../src/structures/AtmQueue.js';
+import { test } from 'node:test';
 import {
+  ARRIVAL_WINDOW_MS,
   mockPeople,
   randomArrivalDate,
   validatePerson,
-  ARRIVAL_WINDOW_MS,
 } from '../src/data/people.js';
+import { AtmQueue } from '../src/structures/AtmQueue.js';
+import { Queue } from '../src/structures/Queue.js';
 
 test('Queue: ejemplo de la clase (A, B, C → dequeue, peek, size)', () => {
   const queue = new Queue();

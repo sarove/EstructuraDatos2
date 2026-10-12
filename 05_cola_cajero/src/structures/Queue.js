@@ -1,16 +1,12 @@
 /**
  * COLA (Queue) - Principio FIFO: First In, First Out
  * ------------------------------------------------------------
- * Estructuras de Datos y Algoritmos II - UAO
- * Estudiante: Salvador Rodriguez Velasco
- *
- * Implementación basada en la Clase 06 - Pilas y Colas.
- * Se usa un arreglo interno (items):
+ *  * Se usa un arreglo interno (items):
  *   - El FRENTE (front) es la posición 0: de ahí se atiende (dequeue).
  *   - El FINAL  (back)  es la última posición: ahí se agrega (enqueue).
  *
- * Como indica la clase, push, shift y length vienen del prototipo de
- * Array en JavaScript; el único método que hay que construir a mano
+ * Push, shift y length vienen del prototipo de
+ * Array en JavaScript; el método que hay que construir 
  * es peek (mirar el frente sin sacarlo).
  */
 export class Queue {

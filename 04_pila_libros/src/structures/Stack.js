@@ -1,14 +1,5 @@
 /**
  * PILA (Stack) - Principio LIFO: Last In, First Out
- * ------------------------------------------------------------
- * Estructuras de Datos y Algoritmos II - UAO
- * Estudiante: Salvador Rodriguez Velasco
- *
- * Implementación basada en la Clase 06 - Pilas y Colas.
- * Se usa un arreglo interno (items). El final del arreglo es la
- * CIMA (top) de la pila: ahí se agregan y de ahí se sacan elementos.
- *
- * Como indica la clase, push, pop y length vienen del prototipo de
  * Array en JavaScript; el único método que hay que construir a mano
  * es peek (mirar la cima sin sacar el elemento).
  */

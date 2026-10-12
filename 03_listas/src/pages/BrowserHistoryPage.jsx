@@ -8,7 +8,6 @@ import { fakePages, bookmarkPages } from '../data/webPages.js';
  *   - Atrás    -> current = current.prev
  *   - Adelante -> current = current.next
  *   - Visitar  -> se corta el historial "hacia adelante" y se hace append
- * Estudiante: Salvador Rodriguez Velasco
  */
 
 // Generador simple de identificadores únicos para cada nodo

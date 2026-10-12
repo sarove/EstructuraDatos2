@@ -1,7 +1,6 @@
 /**
  * Datos simulados (mock) y utilidades de la cola del cajero.
- * Estudiante: Salvador Rodriguez Velasco
- */
+  */
 
 // Ventana de llegada: la persona llegó en algún momento de las últimas 3 horas
 export const ARRIVAL_WINDOW_MS = 3 * 60 * 60 * 1000;
@@ -20,7 +19,7 @@ export function randomArrivalDate(now = new Date(), random = Math.random) {
 
 // Personas de ejemplo: nombre y monto a retirar (COP)
 export const mockPeople = [
-  { name: 'Ana María Gómez', amount: 200000 },
+  { name: 'Ana María Gómez', amount: 300000 },
   { name: 'Carlos Andrés Rojas', amount: 50000 },
   { name: 'Luisa Fernanda Ortiz', amount: 1200000 },
   { name: 'Jhon Jairo Valencia', amount: 300000 },

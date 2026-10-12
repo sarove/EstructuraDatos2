@@ -4,7 +4,7 @@
  * Estructuras de Datos y Algoritmos II - UAO
  * Estudiante: Salvador Rodriguez Velasco
  *
- * Implementación basada en la Clase 03 - Listas:
+ * Implementación basada en la Listas:
  *   - Node:       value + next
  *   - LinkedList: head, tail, length
  *   - Métodos:    append, peek, size, remove, print

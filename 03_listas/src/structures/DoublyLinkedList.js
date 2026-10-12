@@ -3,11 +3,7 @@
  * ------------------------------------------------------------
  * Estructuras de Datos y Algoritmos II - UAO
  * Estudiante: Salvador Rodriguez Velasco
- *
- * Implementación basada en la Clase 03 - Listas:
- *   - Node:  value + next + prev
- *   - append y remove actualizan también el puntero prev
- *
+ * * 
  * Métodos adicionales para el historial del navegador:
  *   - truncateAfter(node): elimina todo lo que está después de un nodo
  *     (lo que hace un navegador real al visitar una página nueva
@@ -33,8 +29,7 @@ export class DoublyLinkedList {
   }
 
   // append: agrega al final y enlaza en ambos sentidos. O(1)
-  // Nota: en la diapositiva, el caso de lista vacía hace "return" antes
-  // de incrementar length. Aquí se incrementa en ambos casos.
+  // Se incrementa en ambos casos.
   append(value) {
     const newNode = new DoublyNode(value);
 
@@ -74,8 +69,7 @@ export class DoublyLinkedList {
   }
 
   // remove: elimina el nodo y reconecta prev y next. O(n)
-  // Nota: en la diapositiva se usa "this.size--", pero size es un método;
-  // el contador correcto es this.length.
+  // el contador usado es this.length.
   remove(value) {
     if (!this.head) return null;
 

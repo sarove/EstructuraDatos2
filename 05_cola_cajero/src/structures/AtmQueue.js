@@ -3,11 +3,7 @@ import { Queue } from './Queue.js';
 /**
  * COLA DEL CAJERO AUTOMÁTICO (ATM)
  * ------------------------------------------------------------
- * Estudiante: Salvador Rodriguez Velasco
- *
- * Extiende la cola de la clase. El reto pide que cada persona tenga una
- * FECHA DE LLEGADA ALEATORIA asignada por el sistema y que la cola se
- * imprima SEGÚN LA FECHA DE LLEGADA.
+ *  * imprima SEGÚN LA FECHA DE LLEGADA.
  *
  * Como la fecha es aleatoria, una persona que se registra ahora pudo
  * haber llegado ANTES que alguien que ya está en la cola. Para respetar

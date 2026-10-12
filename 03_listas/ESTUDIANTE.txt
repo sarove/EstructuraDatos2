@@ -5,10 +5,10 @@
 
  Asignatura : Estructuras de Datos y Algoritmos II
  Tema       : Listas (Clase 03)
- Entrega    : CHALLENGE 03 - Listas enlazadas y doblemente enlazadas en React
+ Entrega    : Listas enlazadas y doblemente enlazadas en React
  Estudiante : Salvador Rodriguez Velasco
  Semestre   : Sexto (6)
- Fecha      : Septiembre de 2026
+ 
 
 --------------------------------------------------------------
  ENUNCIADO

@@ -1,8 +1,5 @@
 # Challenge 05 · Cola del cajero automático en React
 
-**Estudiante:** Salvador Rodriguez Velasco
-**Asignatura:** Estructuras de Datos y Algoritmos II, Universidad Autónoma de Occidente
-
 Cola (Queue, FIFO) de personas en un cajero. Cada persona tiene nombre, monto a retirar y una fecha de llegada aleatoria asignada por el sistema; la cola se imprime según esa fecha.
 
 | Ruta | Pantalla |

@@ -1,10 +1,7 @@
 /**
  * ÁRBOL N-ARIO (N-ary Tree)
  * ------------------------------------------------------------
- * Estructuras de Datos y Algoritmos II - UAO
- * Estudiante: Salvador Rodriguez Velasco
- *
- * Implementación basada en la Clase 09 - Árboles:
+ * * Implementación:
  *   - Nodo:        valor + hijos (lista de referencias a otros nodos)
  *   - agregarHijo: agrega un nodo como hijo de otro nodo
  *   - dfs:         recorrido en profundidad (recursivo)

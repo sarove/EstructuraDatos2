@@ -4,7 +4,6 @@ import * as pages from './pages/index.js';
 /**
  * Instancia ÚNICA del árbol de menús que usa toda la aplicación.
  * Se construye con los componentes reales de cada página.
- * Estudiante: Salvador Rodriguez Velasco
  */
 export const arbolMenu = crearArbolMenu(pages);
 

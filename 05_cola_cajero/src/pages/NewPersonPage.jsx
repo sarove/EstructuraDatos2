@@ -15,7 +15,6 @@ import {
  * El usuario ingresa nombre y monto. La fecha de llegada NO se digita:
  * la asigna el sistema al azar al momento de guardar. Luego se ejecuta
  * enqueue() y se vuelve a la pantalla de la cola.
- * Estudiante: Salvador Rodriguez Velasco
  */
 
 const EMPTY = { name: '', amount: '' };

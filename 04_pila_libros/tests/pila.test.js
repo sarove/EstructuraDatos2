@@ -1,7 +1,6 @@
 /**
  * Pruebas de la pila y de la validación de libros.
  * Ejecutar con:  npm test
- * Estudiante: Salvador Rodriguez Velasco
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';

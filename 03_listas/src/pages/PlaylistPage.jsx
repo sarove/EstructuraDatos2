@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
+import { extraSongs, formatTime, mockSongs } from '../data/songs.js';
 import { LinkedList } from '../structures/LinkedList.js';
-import { mockSongs, extraSongs, formatTime } from '../data/songs.js';
 
 /**
  * PÁGINA 1: LISTA ENLAZADA SIMPLE
  * Reproductor que toca las canciones EN ORDEN recorriendo la lista
  * nodo por nodo mediante el puntero "next".
- * Estudiante: Salvador Rodriguez Velasco
  */
 
 // Velocidad de la reproducción simulada: 1 segundo de canción cada 100 ms

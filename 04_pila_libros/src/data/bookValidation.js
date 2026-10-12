@@ -1,7 +1,6 @@
 /**
  * Validación de los campos del formulario de libros.
- * Estudiante: Salvador Rodriguez Velasco
- */
+  */
 
 // Deja solo dígitos (y la X final de un ISBN-10)
 export const cleanIsbn = (isbn) => String(isbn).toUpperCase().replace(/[^0-9X]/g, '');
