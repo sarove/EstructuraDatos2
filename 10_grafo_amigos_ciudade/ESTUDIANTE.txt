@@ -1,0 +1,78 @@
+==============================================================
+ UNIVERSIDAD AUTÓNOMA DE OCCIDENTE - Santiago de Cali
+ Entrega    : CHALLENGE 10 - Grafo de amigos y ciudades en React
+              con react-d3-graph
+ Estudiante : Salvador Rodriguez Velasco
+ Semestre   : Sexto (6)
+ Profesor   : Jonathan López Londoño
+ Fecha      : Octubre de 2026
+
+--------------------------------------------------------------
+ ENUNCIADO
+--------------------------------------------------------------
+ 1. Crear y manejar un nuevo grafo de amigos y ciudades.
+    - Cada persona debe ser un nodo, y cada ciudad también.
+    - Cada persona debe tener nombre y edad, y debe estar
+      referenciada a una ciudad.
+    - Cada ciudad debe tener un nombre.
+    - Imprimir la lista de personas que viven en una ciudad.
+    - Usar react-d3-graph para mostrar el grafo en pantalla.
+
+--------------------------------------------------------------
+ CONCEPTO: GRAFO NO DIRIGIDO CON LISTA DE ADYACENCIA
+--------------------------------------------------------------
+ Vértices (nodos): personas y ciudades.
+ Aristas:          persona–ciudad  = "vive en" (una por persona)
+                   persona–persona = "amistad"
+
+ Clase Graph (como en la clase):
+   nodes[]               lista de nodos
+   adjList{}             objeto de adyacencia { id: [vecinos] }
+   addNode, addEdge, searchNode, printAdjacency, printGraph
+   + removeEdge, removeNode, hasEdge, degree, adjacencyMatrix
+
+ Clase FriendsCitiesGraph (extiende Graph):
+   addCity, addPerson, addFriendship, moveToCity, cityOf,
+   friendsOf, peopleInCity, printPeopleInCity
+
+ Datos de ejemplo: 5 ciudades, 12 personas, 14 amistades
+ (17 nodos y 26 aristas).
+
+--------------------------------------------------------------
+ CONTENIDO DEL REPOSITORIO
+--------------------------------------------------------------
+ src/structures/Graph.js              Clase Graph (grafo de la clase)
+ src/structures/FriendsCitiesGraph.js Reglas de amigos y ciudades
+ src/data/mockData.js                 Ciudades, personas y amistades
+ src/data/toD3Data.js                 Conversión al formato de react-d3-graph
+ src/data/validation.js               Validación de formularios
+ src/components/GraphView.jsx         Grafo dibujado con react-d3-graph
+ src/components/CityPeoplePanel.jsx   Personas que viven en una ciudad
+ src/components/PersonCard.jsx        Detalle de una persona
+ src/components/Forms.jsx             Agregar ciudad, persona y amistad
+ src/components/AdjacencyPanel.jsx    Lista y matriz de adyacencia
+ src/App.jsx                          Pantalla principal
+ tests/grafo.test.js                  Pruebas (node:test)
+ docs/                                Documento Word con la explicación
+ .npmrc                               legacy-peer-deps=true (ver nota)
+
+--------------------------------------------------------------
+ CÓMO EJECUTAR
+--------------------------------------------------------------
+ Requisito: Node.js 20.19 o superior (recomendado 22 LTS) y npm.
+
+   1) Abrir una terminal en la carpeta del proyecto
+   2) npm install          (instala dependencias)
+   3) npm run dev          (inicia el servidor de desarrollo)
+   4) Abrir http://localhost:5173 en el navegador
+
+ Otros comandos:
+   npm test                (ejecuta las pruebas del grafo)
+   npm run build           (genera la versión de producción en dist/)
+   npm run preview         (sirve la versión de producción)
+
+ NOTA: react-d3-graph 2.6.0 declara compatibilidad con React 16 y
+ d3 5. El archivo .npmrc permite instalarla junto a React 19 sin
+ errores de dependencias; la librería funciona correctamente.
+
+==============================================================
