@@ -1,0 +1,89 @@
+==============================================================
+ UNIVERSIDAD AUTÓNOMA DE OCCIDENTE - Santiago de Cali
+ Facultad de Ingeniería - Ingeniería Informática
+==============================================================
+
+ Asignatura : Estructuras de Datos y Algoritmos II
+ Tema       : Árboles (Clase 09) - Árboles N-arios
+ Entrega    : CHALLENGE 09 - Menú lateral construido desde un
+              árbol N-ario en React
+ Estudiante : Salvador Rodriguez Velasco
+ Semestre   : Sexto (6)
+ Profesor   : Jonathan López Londoño
+ Fecha      : Septiembre de 2026
+
+--------------------------------------------------------------
+ ENUNCIADO
+--------------------------------------------------------------
+ 1. Crear un proyecto nuevo en React.
+ 2. Llenar un árbol N-ario con menús y submenús. Cada ítem del
+    menú tendrá un título (title), un enlace (link) y un
+    componente (component).
+ 3. Crear un menú lateral (sidebar) en pantalla imprimiendo el
+    árbol creado.
+
+--------------------------------------------------------------
+ CONCEPTO: ÁRBOL N-ARIO
+--------------------------------------------------------------
+ Parte de un nodo raíz (el único sin padre). Cada nodo tiene un
+ valor y una lista de hijos de cualquier tamaño. Los nodos sin
+ hijos son hojas.
+
+ Clase Nodo (como en la clase):
+   valor, hijos[], agregarHijo(nodo), esHoja()
+ Clase ArbolNario:
+   dfs()        recorrido en profundidad (recursivo)     O(n)
+   bfs()        recorrido por niveles (con una cola)      O(n)
+   buscar()     primer nodo que cumple una condición      O(n)
+   rutaHasta()  camino desde la raíz hasta un nodo        O(n)
+   tamano(), altura(), hojas(), grado(), imprimir()
+
+ Árbol de menús: 16 nodos, altura 3, 12 hojas.
+   Menú principal (raíz)
+   ├── Perfil
+   ├── Mensajes
+   ├── Configuración
+   │   ├── Cuenta
+   │   ├── Perfil público
+   │   ├── Seguridad y privacidad
+   │   │   ├── Verificación en dos pasos
+   │   │   └── Sesiones activas
+   │   ├── Contraseña
+   │   └── Notificaciones
+   ├── Ayuda
+   │   ├── Preguntas frecuentes
+   │   ├── Enviar un ticket
+   │   └── Estado de la red
+   └── Cerrar sesión
+
+--------------------------------------------------------------
+ CONTENIDO DEL REPOSITORIO
+--------------------------------------------------------------
+ src/structures/ArbolNario.js     Clases Nodo y ArbolNario
+ src/data/menuTree.js             Construcción del árbol de menús
+ src/menu.js                      Instancia única del árbol
+ src/App.jsx                      Rutas generadas recorriendo el árbol
+ src/components/Sidebar.jsx       Menú lateral (imprime el árbol)
+ src/components/SidebarItem.jsx   Ítem recursivo del menú
+ src/components/Breadcrumbs.jsx   Migas de pan (rutaHasta)
+ src/components/PageHeader.jsx    Datos del nodo en cada página
+ src/pages/                       Componente de cada ítem del menú
+ tests/arbol.test.js              Pruebas (node:test)
+ docs/                            Documento Word con la explicación
+
+--------------------------------------------------------------
+ CÓMO EJECUTAR
+--------------------------------------------------------------
+ Requisito: Node.js 20.19 o superior (recomendado 22 LTS) y npm.
+
+   1) Abrir una terminal en la carpeta del proyecto
+   2) npm install          (instala dependencias)
+   3) npm run dev          (inicia el servidor de desarrollo)
+   4) Abrir http://localhost:5173 en el navegador
+
+ Otros comandos:
+   npm test                (ejecuta las pruebas del árbol)
+   npm run build           (genera la versión de producción en dist/)
+   npm run preview         (sirve la versión de producción)
+
+==============================================================
