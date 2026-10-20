@@ -1,6 +1,7 @@
 /**
  * Datos simulados (mock) para la lista de reproducción.
  * Duración expresada en segundos.
+ * Estudiante: Salvador Rodriguez Velasco
  */
 export const mockSongs = [
   { id: 1, title: 'Cali Pachanguero', artist: 'Grupo Niche', duration: 318, genre: 'Salsa' },

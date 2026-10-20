@@ -1,5 +1,6 @@
 /**
  * Datos falsos (fake) de páginas web para el historial del navegador.
+ * Estudiante: Salvador Rodriguez Velasco
  */
 export const fakePages = [
   {
