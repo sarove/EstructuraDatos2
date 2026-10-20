@@ -1,0 +1,18 @@
+Universidad Autónoma de Occidente
+Ingeniería Informática - 6.º semestre
+Asignatura: Estructura de Datos y Algoritmos II
+Tema: Tries & Heaps (Clase 11)
+
+Challenge 11 - Smart search engine + Top results
+Estudiante: Salvador Rodriguez Velasco
+
+Contenido del reto:
+1. Guardar productos ({ name, popularity }) en un Trie.
+2. Permitir buscar por prefijo.
+3. Usar un Heap para devolver el Top K de los más populares.
+   Ejemplo: searchTopK("air", 2) -> air force (95), air max (90)
+
+Ejecución:
+  npm install
+  npm run dev        (abrir http://localhost:5173)
+  npm run consola    (demo del ejemplo del reto solo por consola)
